@@ -728,7 +728,7 @@ button {
 #inicios .history-content .top-design .forward img {
   display: flex;
   position: absolute;
-  top: 8em;
+  top: 8.5em;
   right: 1em;
   width: 4em;
   cursor: pointer;
@@ -736,7 +736,7 @@ button {
 #inicios .history-content .top-design .backward img {
   display: flex;
   position: absolute;
-  top: 8em;
+  top: 8.5em;
   right: 6em;
   width: 4em;
   cursor: pointer;
