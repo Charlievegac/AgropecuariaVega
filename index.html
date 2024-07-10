@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Agropecuaria Vega</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <!--
+        This project will be coded in english (Classw names), HOWEVER the id's will reflect what is on the 
+        page and therefore the id's will be in spanish
+    -->
+  <body>
+    <!--PAGE-->
+    <div class="container">
+      <!--PAGE NAVIGATOR-->
+      <div class="page-nav-container-lrg montserrat">
+        <div class="left-side">
+          <a class="logo" href="#welcome">
+            <img src="Images/Agroservicios_Vega_Logo.png" alt="logo" />
+          </a>
+          <a class="item special-effect-line" href="#servicios"> Servicios </a>
+          <a class="item special-effect-line" href="#nosotros"> Nosotros </a>
+          <a class="item special-effect-line" href="#inicios"> Inicios </a>
+        </div>
+        <div class="right-side">
+          <a class="item special-effect-line" href="#contacto"> Contacto </a>
+        </div>
+      </div>
+      <div class="page-nav-container-sm montserrat">
+        <a class="logo" href="#welcome">
+          <img src="Images/Agroservicios_Vega_Logo.png" alt="logo" />
+        </a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <img src="Images/Dropdown_Menu.png" alt="Dropdown Menu" />
+          </button>
+          <div class="dropdown-content">
+            <a class="item special-effect-line" href="#servicios">
+              Servicios
+            </a>
+            <a class="item special-effect-line" href="#nosotros"> Nosotros </a>
+            <a class="item special-effect-line" href="#inicios"> Inicios </a>
+          </div>
+        </div>
+      </div>
+      <!--WELCOME IMAGE SECTION-->
+      <div class="welcome-image-container" id="welcome">
+        <img
+          src="Images/Agropecuaria_Vega_Bienvenidos.png"
+          alt="welcome image"
+        />
+      </div>
+      <!--SERVICE SECTION-->
+      <div class="content-container montserrat" id="servicios">
+        <h2 class="service-title-lrg">Nuestros Servicios</h2>
+        <h2 class="service-title-sm">Servicios</h2>
+        <!--SERVICE PAGE NAVIGATOR-->
+        <div class="service-nav-container">
+          <div class="item">
+            <button
+              class="active"
+              id="service-nav-productos-prima"
+              onclick="activateService('service-content-productos-prima', 'service-nav-productos-prima')"
+            >
+              <span class="tooltip"> Productos </span>
+            </button>
+          </div>
+          <div class="line"></div>
+          <div class="item">
+            <button
+              id="service-nav-nivelacion"
+              onclick="activateService('service-content-nivelacion', 'service-nav-nivelacion')"
+            >
+              <span class="tooltip"> Nivelacion </span>
+            </button>
+          </div>
+          <div class="line"></div>
+          <div class="item">
+            <button
+              id="service-nav-cosecha"
+              onclick="activateService('service-content-cosecha', 'service-nav-cosecha')"
+            >
+              <span class="tooltip"> Cosecha </span>
+            </button>
+          </div>
+          <div class="line"></div>
+          <div class="item">
+            <button
+              id="service-nav-agroservicios"
+              onclick="activateService('service-content-agroservicios', 'service-nav-agroservicios')"
+            >
+              <span class="tooltip"> Agroservicios </span>
+            </button>
+          </div>
+        </div>
+        <!--SERVICE CONTENT ITEMS THAT WILL BE TRANSITIONING-->
+        <div class="service-content-container">
+          <div
+            class="service-content active"
+            id="service-content-productos-prima"
+          >
+            <h2 class="title" id="productos">Venta de Productos Prima</h2>
+            <h2 class="title-sm">Productos Prima</h2>
+            <div class="information-container">
+              <div class="image-container" id="agave">
+                <div class="information">
+                  <button class="special-effect-line">Agave Azul</button>
+                  <p>
+                    Nuestro más reciente integrante a la familia Vega, el Agave
+                    Azul. Próximamente lanzaremos nuestro propio servicio de
+                    administración de agave, asegurando calidad y compromiso en
+                    cada etapa del proceso. Estamos emocionados de expandir
+                    nuestra oferta y ofrecer soluciones excepcionales en la
+                    gestión de esta planta clave.
+                  </p>
+                </div>
+                <img src="Images\Agave_Square.jpg" alt="Agave image" />
+              </div>
+              <div class="image-container" id="maiz">
+                <div class="information">
+                  <button class="special-effect-line">Maiz Blanco</button>
+                  <p>
+                    Actualmente somos los productores más eficientes y con mejor
+                    calidad de maíz en la región de Jalisco. Nuestro producto se
+                    distribuye directamente a empresas y próximamente lanzaremos
+                    nuestro servicio de compra y distribución de granos,
+                    fortaleciendo así nuestra oferta integral en el mercado
+                    agrícola.
+                  </p>
+                </div>
+                <img src="Images\Corn_Square.jpg" alt="Corn image" />
+              </div>
+              <div class="image-container" id="trigo">
+                <div class="information">
+                  <button class="special-effect-line">Trigo</button>
+                  <p>
+                    Desde el invierno hasta la primavera, cultivamos trigo en
+                    nuestro rancho principal de La Soledad. Este cultivo no
+                    solamente es vendido a nuestros consumidores, sino que
+                    también se utiliza para enriquecer la tierra y aumentar el
+                    rendimiento del maíz, asegurando ciclos agrícolas
+                    sostenibles y productivos.
+                  </p>
+                </div>
+                <img src="Images\Corn_Square.jpg" alt="Corn image" />
+              </div>
+            </div>
+          </div>
+          <div class="service-content" id="service-content-nivelacion">
+            <h2 class="title">Nivelacion Satelital</h2>
+            <div class="information-container">
+              <img
+                src="Images/Agroservicios_Vega_imagen_inicial.png"
+                alt="Nivelacion"
+              />
+              <div class="information">
+                <button class="special-effect-line">Nivelacion</button>
+                <p>
+                  La nivelación satelital agrícola emplea tecnología GPS para
+                  una precisión milimétrica en la preparación del terreno,
+                  optimizando el rendimiento de los cultivos y la gestión del
+                  agua. Utiliza un tractor New Holland 410 y una niveladora
+                  Garfield. El sistema GPS crea un mapa topográfico detallado y
+                  ajusta la altura de la cuchilla de la niveladora para una
+                  nivelación uniforme. Esto mejora la distribución del agua,
+                  incrementa la productividad y reduce el uso de recursos,
+                  promoviendo prácticas agrícolas sostenibles y eficaces.
+                </p>
+                <a href="#contacto" class="special-effect-line">
+                  Contratacion
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="service-content" id="service-content-cosecha">
+            <h2 class="title">Cosecha</h2>
+            <div class="information-container">
+              <img
+                src="Images/Agroservicios_Vega_imagen_inicial.png"
+                alt="Nivelacion"
+              />
+              <div class="information">
+                <button class="special-effect-line">Cosecha</button>
+                <p>
+                  Ofrecemos un servicio integral de cosecha que abarca desde la
+                  recolección hasta el transporte y la entrega directa a
+                  empresas. Utilizamos la cosechadora John Deere 9550, conocida
+                  por su eficiencia y capacidad, asegurando una recolección
+                  rápida y precisa de los granos. Además, disponemos de una
+                  flota variada de camiones de remolque que garantizan un
+                  transporte seguro y puntual de la cosecha. Nuestro servicio no
+                  solo asegura la mejor calidad de los granos, sino también los
+                  mejores precios del mercado. Facilitamos todo el proceso,
+                  desde el campo hasta el punto de venta, brindando a nuestros
+                  clientes una solución completa y eficiente.
+                </p>
+                <a href="#contacto" class="special-effect-line">
+                  Contratacion
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="service-content" id="service-content-agroservicios">
+            <h2 class="title">Agroservicios Vega</h2>
+            <div class="information-container">
+              <h2>Proximamente...</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--ABOUT SECTION-->
+      <div class="content-container montserrat" id="nosotros">
+        <!--ABOUT SECTION NAVIGATOR-->
+        <ul class="about-nav-container">
+          <li class="item active" id="about-nav-mision">
+            <b></b>
+            <b></b>
+            <a
+              class="montserrat"
+              onclick="activateAbout('about-content-mision', 'about-nav-mision')"
+            >
+              Mision
+            </a>
+          </li>
+          <li class="item" id="about-nav-vision">
+            <b></b>
+            <b></b>
+            <a
+              class="montserrat"
+              onclick="activateAbout('about-content-vision', 'about-nav-vision')"
+            >
+              Vision
+            </a>
+          </li>
+          <li class="item" id="about-nav-pilares">
+            <b></b>
+            <b></b>
+            <a
+              class="montserrat"
+              onclick="activateAbout('about-content-pilares', 'about-nav-pilares')"
+            >
+              Pilares
+            </a>
+          </li>
+        </ul>
+        <!--ABOUT CONTENT ITEMS THAT WILL BE TRANSITIONING-->
+        <div class="about-content-container">
+          <div class="about-content active" id="about-content-mision">
+            <h2 class="title" id="nuestra-mision">Nuestra Mision</h2>
+            <h2 class="title-sm">Mision</h2>
+            <p class="information">
+              Desde 1980, en La Soledad, Jalisco, México, tres generaciones de
+              nuestra familia han cultivado la tierra con pasión y dedicación.
+              En Agropecuaria La Soledad de Vega, nuestra misión es ofrecer
+              productos agrícolas de la más alta calidad, basándonos en los
+              pilares de Honestidad, Innovación, Pasión y Adaptabilidad.
+              Actuamos con transparencia y rectitud, adoptamos tecnologías
+              modernas para mejorar la sostenibilidad y eficiencia, trabajamos
+              con amor por la tierra y nos ajustamos a los cambios del mercado
+              para asegurar la continuidad y resiliencia de nuestra empresa
+              familiar. Nos esforzamos por nutrir tanto a la tierra como a
+              nuestras comunidades, manteniendo viva una tradición de excelencia
+              agrícola que enorgullece a nuestras generaciones pasadas,
+              presentes y futuras.
+            </p>
+          </div>
+          <div class="about-content" id="about-content-vision">
+            <h2 class="title" id="nuestra-vision">Nuestra Vision</h2>
+            <h2 class="title-sm">Vision</h2>
+            <p class="information">
+              Nuestra visión en Agropecuaria La Soledad de Vega es ser líderes
+              en la agricultura en Jalisco y todo México, reconocidos por
+              nuestra capacidad de innovar y adaptarnos a los desafíos del
+              futuro. Aspiramos a expandir nuestra presencia en el mercado
+              nacional, promoviendo prácticas agrícolas responsables que
+              respeten y regeneren nuestro entorno. Queremos ser un ejemplo de
+              excelencia y compromiso, no solo en la producción de alimentos,
+              sino también en el bienestar de nuestras comunidades y en la
+              preservación de nuestras tradiciones familiares. En el camino,
+              buscamos inspirar a nuevas generaciones de agricultores a seguir
+              cultivando la tierra con la misma pasión, honestidad y dedicación
+              que nos han caracterizado por más de cuatro décadas.
+            </p>
+          </div>
+          <div class="about-content" id="about-content-pilares">
+            <h2 class="title" id="nuestros-pilares">Nuestros Pilares</h2>
+            <h2 class="title-sm">Pilares</h2>
+            <ul class="information">
+              <li>- Honestidad</li>
+              <li>- Innovacion</li>
+              <li>- Passion</li>
+              <li>- Adaptabilidad</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--HISTORY SECTION-->
+      <div class="content-container montserrat" id="inicios">
+        <h2 class="history-title">Nuestros Inicios</h2>
+        <!--HISTORY CONTENT SLIDES-->
+        <div class="history-content-container active" id="history-1">
+          <div class="history-content">
+            <div class="top-design">
+              <div class="numbers poppins">
+                <span> 1 </span>
+                <span> 1 </span>
+                <span> 1 </span>
+              </div>
+              <span class="line"></span>
+              <button class="backward" onclick="activateHistory('history-3')">
+                <img src="Images/Backward_Button.png" alt="Backward" />
+              </button>
+              <button class="forward" onclick="activateHistory('history-2')">
+                <img src="Images/Forward_Button.png" alt="Forward" />
+              </button>
+            </div>
+            <div class="information montserrat">
+              Nuestra historia se expande a lo largo de cuatro generaciones,
+              comenzando con Nicolás Vega. Como parte del programa de braceros,
+              Nicolás emigró a California, Estados Unidos, donde empezó a
+              dedicarse a la agricultura. Sentando las bases de una tradición
+              familiar agricola que continuaria por mas de siete decadas.
+              <br /><br />
+              Tras adquirir experiencia en la gestión del rancho, Aristeo Vego,
+              hijo mayor de Nicolas Vega, decidio emprender su propia empresa
+              agrícola junto a sus hermanos. Dando inicio a Vega Brothers, una
+              empresa dedicada al cultivo de jitomates en Carlsbad, California.
+              Gracias al esfuerzo y dedicación de los hermanos Vega, la empresa,
+              que comenzó con una simple mesa de billar para clasificar los
+              jitomates, se expandió rápidamente, llegando a emplear a cientos
+              de trabajadores.
+              <br /><br />
+              En 1980, después del éxito empresarial obtenido con Vega Brothers,
+              Aristeo Vega regresaria a Jalisco, México donde adquiriria un
+              rancho y comenzaria a cultivar diversos productos agrícolas. Fue
+              así como se estableció la Agropecuaria La Soledad de Vega como
+              renombre agricola en la region de Jalisco.
+            </div>
+          </div>
+          <div class="history-image montserrat">
+            <img src="Images/AristeoVega_070824.JPEG" alt="Aristeo Vega" />
+            <h3 class="information special-effect-line">Fundador</h3>
+          </div>
+        </div>
+        <div class="history-content-container" id="history-2">
+          <div class="history-content">
+            <div class="top-design">
+              <div class="numbers poppins">
+                <span> 2 </span>
+                <span> 2 </span>
+                <span> 2 </span>
+              </div>
+              <span class="line"></span>
+              <button class="backward" onclick="activateHistory('history-1')">
+                <img src="Images/Backward_Button.png" alt="Backward" />
+              </button>
+              <button class="forward" onclick="activateHistory('history-3')">
+                <img src="Images/Forward_Button.png" alt="Forward" />
+              </button>
+            </div>
+            <div class="information">
+              La tradición familiar continua con los tres hermanos: Sergio Vega,
+              Carlos E. Vega y Ricardo Vega, quienes siguien en los pasos de su
+              padre y anterior presidente de la agropecuaria. Además de su
+              pasión por la agricultura, los hermanos destacan por su compromiso
+              con la innovación. Incorporarondo nuevas técnicas y tecnologías en
+              el campo, manteniéndose siempre a la vanguardia de la competencia
+              agrícola en Jalisco.
+              <br /><br />
+              Gracias a su firmeza en la innovación agrícola, nuestra
+              agropecuaria se ha destacado por su compromiso con la mejora
+              continua. Siendo pioneros en maquinaria agricola y
+              implementaciones nuevas. Por ejemplo siendo los primeros en el
+              estado de Jalisco en incorporar tractores de alto despeje,
+              mejorando la aplicación de pesticidas y fertilizantes en etapas
+              avanzadas de las plantas. Al igual en ser los primeros en adquirir
+              tractores con cabina para mejorar la seguridad y comodidad de
+              nuestros trabajadores. Además, hemos integrado la nivelación
+              satelital, optimizando la distribución uniforme del riego y
+              incrementando la productividad y rentabilidad de los cultivos.
+              <br /><br />
+              Nuestra inversión en maquinaria avanzada y techonologias modernas
+              refleja nuestro compromiso con la excelencia y la innovación en el
+              sector agrícola, demostrando nuestro liderazgo y dedicación a
+              ofrecer soluciones agrícolas sostenibles y efectivas.
+              <br /><br />
+              Durante la administración de los tres hermanos, la agropecuaria ha
+              expandido sus servicios, abarcando desde el cultivo de maíz hasta
+              el agave, y servicios de nivelación agrícola. Esta dedicación a la
+              mejora continua ha consolidado nuestra posición como líderes en el
+              sector agrícola de Jalisco.
+            </div>
+          </div>
+          <div class="history-image">
+            <img src="Images/AristeoVega_070824.JPEG" alt="Aristeo Vega" />
+            <h3 class="information special-effect-line">Los Tres Hermanos</h3>
+          </div>
+        </div>
+        <div class="history-content-container" id="history-3">
+          <div class="history-content">
+            <div class="top-design">
+              <div class="numbers poppins">
+                <span> 3 </span>
+                <span> 3 </span>
+                <span> 3 </span>
+              </div>
+              <span class="line"></span>
+              <button class="backward" onclick="activateHistory('history-2')">
+                <img src="Images/Backward_Button.png" alt="Backward" />
+              </button>
+              <button class="forward" onclick="activateHistory('history-1')">
+                <img src="Images/Forward_Button.png" alt="Forward" />
+              </button>
+            </div>
+            <div class="information">
+              La herencia familiar de la pasión por el campo, que ha perdurado
+              durante cuatro generaciones, sigue más fuerte que nunca. Siendo
+              esto reflejado por medio de los nietos de Aristeo Vega. Un ejemplo
+              es Carlos J. Vega que utilizando su especialidad en informatica y
+              administracion de empresas busca combinar agricultura con
+              techonologia para ofrecer servicios que puedan ayudar a
+              agricultores de todo tipo en la administracion de sus cultivos.
+              Creando un systema de administracion, comunicacion, y comunidad
+              para los agricultores. Ayudando al agricultor a estar mas enfocado
+              en crecimiento y rentabilidad de sus productos en vez de el
+              papeleo y desorder que causa el administracion agricola. Gracias a
+              las cuatro generaciones de conocimientos en administracion
+              agricola, este proyecto aprovecha la experiencia acumulada por
+              parte de la Familia Vega para ortogar un servicios personalizado
+              para agricultores.
+              <h3 class="special-effect-line">
+                Mas informacion sobre Agroservicios Vega
+              </h3>
+            </div>
+          </div>
+          <div class="history-image">
+            <img
+              src="Images/CarlosVega_Headshot_070824.png"
+              alt="Carlos Vega"
+            />
+            <h3 class="information special-effect-line">Cuarta Generacion</h3>
+          </div>
+        </div>
+      </div>
+      <!--CONTACT SECTION-->
+      <div class="content-container poppins" id="contacto">
+        <h2 class="title">Contacto</h2>
+        <!--CONTACT FORM TO SEND MESSAGES-->
+        <form action="https://formspree.io/f/xnnaqrvj" method="POST">
+          <div class="question-container">
+            <label for="name"> Nombre: </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Charlie Vega"
+              title="Solo letras son validas"
+              required
+            />
+          </div>
+          <div class="question-container">
+            <label for="email"> Email: </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="agroservicios.vega@gmail.com"
+              title="Ingresa tu correo electronico"
+              required
+            />
+          </div>
+          <div class="question-container">
+            <label for="tel"> Numero Telefonico: </label>
+            <input
+              type="tel"
+              id="tel"
+              name="tel"
+              placeholder="+52 (331) 123-2222"
+              pattern="^\+\d{2} \(\d{3}\) \d{3}-\d{4}$"
+              title="Formato: +NN (NNN) NNN-NNNN (Donde N representa algun digito de 0-9)"
+              required
+            />
+          </div>
+          <div class="question-container">
+            <label for="message"> Mensaje: </label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="texto"
+              required
+            ></textarea>
+          </div>
+          <input type="submit" id="submit" value="Enviar" />
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
